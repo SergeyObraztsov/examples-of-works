@@ -1,0 +1,53 @@
+/* global styles */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #efeeee;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+    font-size: $text;
+}
+
+
+h1 {
+    font-style: $header1;
+}
+
+h2 {
+    font-size: $header2;
+}
+
+h3 {
+    font-size: $header3;
+}
+
+h4,
+h5 {
+    font-size: $header4;
+}
+
+a {
+    text-decoration: none;
+    color: $gray-text;
+}
+
+ul {
+    list-style: none;
+}

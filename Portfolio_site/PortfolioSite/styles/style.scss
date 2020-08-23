@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap');
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@import '_projects.scss';
+@import '_global.scss';
+@import '_intro.scss';
+@import '_contacts.scss';
+
+
+@media screen and (max-width: 1332px) {
+    html {
+        font-size: 53%;
+    }
+
+    .splash {
+        width: 50%;
+    }
+
+    svg {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 988px) {
+    html {
+        font-size: 53%;
+    }
+
+    .splash {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+    .projects-head{
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 837px) {
+    nav {
+        width: 100%;
+    }
+
+    svg {
+        width: 100%;
+    }
+
+    svg {
+        height: 60%;
+    }
+    .projects-head{
+        margin: 0 0 2rem 0;
+    }
+
+    .elena,
+    .travelly {
+        margin: 0 0 3rem 0;
+        flex: 1 1 50rem;
+        
+    }
+    .cards{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 753px) {
+    html {
+        font-size: 45%;
+    }
+
+    .elena,
+    .travelly {
+        flex: 1 1 50rem;
+
+    }
+    .textarea{
+        padding-top: 1.5rem;
+    }
+
+    .search__input {
+        height: 6rem;
+        font-size: 2.5rem;
+
+    }
+
+    .search__icon {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .main-head {
+        width: 100%;
+    }
+
+    nav {
+        margin: 2rem;
+    }
+
+    footer {
+        text-align: center;
+        p{
+            display: none;
+        }
+
+        h4 {
+            padding: 3rem;
+        }
+
+        ul {
+            padding: 0 0 2rem 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 423px) {
+    nav {
+        margin: 0;
+
+        .logo {
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        ul {
+            margin: 2rem 0rem;
+        }
+    }
+    .projects-head{
+        margin-top: 2rem !important;
+    }
+
+    svg {
+        width: 100%;
+    }
+
+    .intro-text {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .intro-social {
+        @include flex(center, center, row);
+
+        a {
+            margin: 2rem;
+        }
+    }
+
+    .signup {
+        width: 100%;
+    }
+}
